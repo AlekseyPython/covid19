@@ -18,13 +18,17 @@ PERIOD_FROM_AMBULANCE_TO_HOSPITALIZATION = 0
 MINIMUM_QUANTITY_STATIONS_FOR_CALCULATING_AIR_POLLUTION = 10
 
 console_mode = False
-debuge_mode = False
+debuge_mode = True
 
 PATH_COVID_PATIENTS = '/home/ivan/Documents/MoscowBase/CovidPatients.csv'
+PATH_COVID_PATIENTS_NPZ = '/home/ivan/Documents/MoscowBase/CovidPatients.npz'
 CONVERTED_DATA = '/home/ivan/Documents/MoscowBase/converted_data.h5'
 FOLDER_FOR_TEMPORARY_FILES = '/home/ivan/Documents/MoscowBase/TEMPORARY_FILES'
 FOLDER_MOSCOW_MAPS = '/home/ivan/Documents/MoscowBase/MOSCOW_MAPS'
 FOLDER_WITH_IMAGES = '/home/ivan/Documents/MoscowBase/IMAGES'
+
+FOLDER_WITH_MEDICAL_BOOKS = '/home/ivan/Documents/MoscowBase/MEDICAL BOOKS'
+PATH_EMBEDDINGS = '/home/ivan/Documents/MoscowBase/MEDICAL BOOKS/medical_domain_embedings.bin'
 
 PATH_BASE_COORDINATES_OF_ADDRESSES = '/home/ivan/Documents/MoscowBase/Osmand/BASE_COORDINATES_OF_ADDRESSES.csv'
 PATH_BASE_TYPE_BUILDING_AND_COORDINATES = '/home/ivan/Documents/MoscowBase/Osmand/BASE_TYPE_BUILDING_AND_COORDINATES.csv'

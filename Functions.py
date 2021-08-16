@@ -16,6 +16,10 @@ def get_temporary_files(parameters_temporary_file):
     end_of_file_name = _get_temporary_file_name(parameters_temporary_file, with_date_and_time=False)
     dir_name = Settings.FOLDER_FOR_TEMPORARY_FILES
     return [file_name for file_name in os.listdir(dir_name) if file_name.endswith(end_of_file_name)]
+
+def count_quantity_files(parameters_temporary_file):    
+    file_names = get_temporary_files(parameters_temporary_file)
+    return len(file_names)
     
 def load_objects_from_complete_bunch_of_files(parameters_temporary_files: list):
     files_for_parameters = {}
@@ -121,4 +125,10 @@ def find_nearest_value_in_array(array, value):
     
     array = np.asarray(array)
     idx = (np.abs(array - value)).argmin()
-    return array[idx]    
+    return array[idx] 
+
+def concatenate_list_of_lists(list_of_lists):
+    all_lists = []
+    for curent_list in list_of_lists:
+        all_lists.extend(curent_list)
+    return all_lists  
